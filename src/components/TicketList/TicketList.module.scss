@@ -1,0 +1,38 @@
+.ticket-list {
+  padding-inline-start: 0;
+  width: 100%;
+  height: auto;
+  min-width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 10px;
+}
+
+button {
+  margin-top: 10px;
+  border: none;
+  background: none;
+}
+
+.show-more-btn {
+  padding: 15px 20px 15px 20px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2196f3;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  transition: 250ms;
+  cursor: pointer;
+
+  &:hover {
+    background: white;
+    color: #2196f3;
+    border: 1px solid #2196f3;
+  }
+}

@@ -1,0 +1,74 @@
+.ticket {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(151, 151, 151, 0.3);
+  border-radius: 8px;
+
+  @media (max-width: 768px) {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 502px;
+  }
+}
+
+.ticket-header {
+  width: 100%;
+  height: 36px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.priceClass {
+  font-size: 24px;
+  color: #2196f3;
+}
+
+.routes-wrapper {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+
+  @media (max-width: 360px) {
+    font-size: 12px;
+  }
+
+  span {
+    display: flex;
+
+    &:first-of-type {
+      color: #a0b0b9;
+    }
+  }
+
+  .forward-route,
+  .backward-route {
+    width: 100%;
+    display: flex;
+  }
+
+  .route,
+  .flightTime,
+  .transfer {
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.flightTime span {
+  display: flex;
+  justify-content: center;
+}
+
+.transfer span {
+  display: flex;
+  justify-content: flex-end;
+}
